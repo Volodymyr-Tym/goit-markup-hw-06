@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Homework 3</title>
   </head>
 
@@ -81,9 +82,9 @@
       <!-- Section 1 (Features) -->
       <section class="features">
         <div class="container">
-          <h2 class="section-title">Features</h2>
+          <h2 class="section-title-h">Features</h2>
           <ul class="features-list">
-            <li>
+            <li class="features-list-item">
               <h3 class="features-title">Strategy</h3>
               <p class="features-text">
                 Our goal is to identify the business problem to walk away with
@@ -91,7 +92,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-list-item">
               <h3 class="features-title">Punctuality</h3>
               <p class="features-text">
                 Bring the key message to the brand's audience for the best price
@@ -99,7 +100,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-list-item">
               <h3 class="features-title">Diligence</h3>
               <p class="features-text">
                 Research and confirm brands that present the strongest digital
@@ -107,7 +108,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="features-list-item">
               <h3 class="features-title">Technologies</h3>
               <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
@@ -131,8 +132,10 @@
                 alt="Mark Guerrero photo"
                 width="264"
               />
-              <h3 class="team-member-title">Mark Guerrero</h3>
-              <p class="team-member-pos">Product Designer</p>
+              <div class="team-member-profile">
+                <h3 class="team-member-title">Mark Guerrero</h3>
+                <p class="team-member-pos">Product Designer</p>
+              </div>
             </li>
 
             <li class="our-team-card">
@@ -142,8 +145,10 @@
                 alt="Tom Ford photo"
                 width="264"
               />
-              <h3 class="team-member-title">Tom Ford</h3>
-              <p class="team-member-pos">Frontend Developer</p>
+              <div class="team-member-profile">
+                <h3 class="team-member-title">Tom Ford</h3>
+                <p class="team-member-pos">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="our-team-card">
@@ -153,8 +158,10 @@
                 alt="Camila Garcia photo"
                 width="264"
               />
-              <h3 class="team-member-title">Camila Garcia</h3>
-              <p class="team-member-pos">Marketing</p>
+              <div class="team-member-profile">
+                <h3 class="team-member-title">Camila Garcia</h3>
+                <p class="team-member-pos">Marketing</p>
+              </div>
             </li>
 
             <li class="our-team-card">
@@ -164,8 +171,10 @@
                 alt="Daniel Wilson photo"
                 width="264"
               />
-              <h3 class="team-member-title">Daniel Wilson</h3>
-              <p class="team-member-pos">UI Designer</p>
+              <div class="team-member-profile">
+                <h3 class="team-member-title">Daniel Wilson</h3>
+                <p class="team-member-pos">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -183,8 +192,10 @@
                 alt="Banking App photo"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Banking App</h3>
-              <p class="portfolio-item-text">App</p>
+              <div class="portfolio-item-descr">
+                <h3 class="portfolio-item-title">Banking App</h3>
+                <p class="portfolio-item-text">App</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -193,8 +204,10 @@
                 alt="Cashless Payment photo"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Cashless Payment</h3>
-              <p class="portfolio-item-text">Marketing</p>
+              <div class="portfolio-item-descr">
+                <h3 class="portfolio-item-title">Cashless Payment</h3>
+                <p class="portfolio-item-text">Marketing</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -203,8 +216,10 @@
                 alt="Meditation App photo"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Meditation App</h3>
-              <p class="portfolio-item-text">App</p>
+              <div class="portfolio-item-descr">
+                <h3 class="portfolio-item-title">Meditation App</h3>
+                <p class="portfolio-item-text">App</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -213,8 +228,10 @@
                 alt="Taxi Service photo"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Taxi Service</h3>
-              <p class="portfolio-item-text">Marketing</p>
+              <div class="portfolio-item-descr">
+                <h3 class="portfolio-item-title">Taxi Service</h3>
+                <p class="portfolio-item-text">Marketing</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -223,8 +240,10 @@
                 alt="Screen Illustrations photo"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Screen Illustrations</h3>
-              <p class="portfolio-item-text">Design</p>
+              <div class="portfolio-item-descr">
+                <h3 class="portfolio-item-title">Screen Illustrations</h3>
+                <p class="portfolio-item-text">Design</p>
+              </div>
             </li>
 
             <li class="portfolio-item">
@@ -233,8 +252,10 @@
                 alt="Online Courses photo"
                 width="360"
               />
-              <h3 class="portfolio-item-title">Online Courses</h3>
-              <p class="portfolio-item-text">Marketing</p>
+              <div class="portfolio-item-descr">
+                <h3 class="portfolio-item-title">Online Courses</h3>
+                <p class="portfolio-item-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
