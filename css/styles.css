@@ -41,13 +41,17 @@ body {
   background-color: #ffffff;
 }
 
-.container {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+/* Header line */
+.head-line-container {
+  display: flex;
 }
 
-/* Header line */
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .head-line {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -162,7 +166,7 @@ body {
   padding: 120px 0;
 }
 
-.visually-hidden {
+.section-title-h {
   position: absolute;
   width: 1px;
   height: 1px;
