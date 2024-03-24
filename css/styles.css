@@ -188,7 +188,7 @@ body {
   margin-bottom: 72px;
 }
 
-.features .section-title {
+.section-title.hidden-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -219,8 +219,6 @@ body {
 }
 
 .features-icon {
-  width: 64px;
-  height: 64px;
 }
 
 .features-title {
