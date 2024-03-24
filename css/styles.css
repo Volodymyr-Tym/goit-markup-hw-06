@@ -226,7 +226,6 @@ body {
   width: 64px;
   height: 64px;
   margin: 24px auto;
-  border: 2px dashed #2a2a2a;
 }
 
 .features-title {
@@ -294,9 +293,21 @@ body {
   margin: 0;
 }
 .socials-list-item {
+  /* width: 40px;
+  height: 40px; */
+}
+.socials-icon {
   width: 40px;
   height: 40px;
-  border: 1px solid black;
+  fill: #4d5ae5;
+}
+.socials-icon:hover,
+.socials-icon:focus {
+  cursor: pointer;
+  fill: #31d0aa;
+  /* my border */
+  border: 2px dashed #2a2a2a;
+  /* my border */
 }
 
 /* Section 3 (Our Portfolio ) */
