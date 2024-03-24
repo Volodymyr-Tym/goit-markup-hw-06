@@ -226,7 +226,7 @@ body {
   width: 64px;
   height: 64px;
   margin: 24px auto;
-  /* border: 2px dashed #2a2a2a; */
+  border: 2px dashed #2a2a2a;
 }
 
 .features-title {
@@ -263,7 +263,8 @@ body {
 }
 
 .team-member-profile {
-  padding: 32px 0;
+  padding: 32px 16px;
+  background-color: tomato;
 }
 .team-member-title {
   font-weight: 500;
@@ -280,6 +281,21 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-member-socials {
+  /* height: 40px; */
+}
+.socials-list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+.socials-list-item {
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid black; */
 }
 
 /* Section 3 (Our Portfolio ) */
