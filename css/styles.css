@@ -177,7 +177,18 @@ body {
   padding: 120px 0;
 }
 
-.section-title-h {
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.features .section-title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -198,15 +209,18 @@ body {
 .features-list-item {
   width: calc((100% - 72px) / 4);
 }
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
-  margin-bottom: 72px;
+
+.features-icon-box {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 24px auto;
+}
+
+.features-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .features-title {
