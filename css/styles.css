@@ -263,7 +263,6 @@ body {
 
 .team-member-profile {
   padding: 32px 16px;
-  /* background-color: tomato; */
 }
 .team-member-title {
   font-weight: 500;
@@ -274,6 +273,7 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .team-member-pos {
   font-size: 16px;
   line-height: 1.5;
@@ -282,9 +282,7 @@ body {
   text-align: center;
   margin-bottom: 8px;
 }
-.team-member-socials {
-  /* height: 40px; */
-}
+
 .socials-list {
   display: flex;
   flex-direction: row;
@@ -292,17 +290,15 @@ body {
   padding: 0;
   margin: 0;
 }
-.socials-list-item {
-  /* width: 40px;
-  height: 40px; */
-}
+
 .socials-icon {
   width: 40px;
   height: 40px;
   fill: #4d5ae5;
 }
-.socials-icon:hover .socials-icon,
-.socials-icon:focus .socials-icon {
+
+.socials-icon:hover,
+.socials-icon:focus {
   cursor: pointer;
   fill: #31d0aa;
 }
@@ -357,6 +353,7 @@ body {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 .portfolio-item-title {
   font-weight: 500;
   font-size: 20px;
@@ -365,6 +362,7 @@ body {
   color: #2e2f42;
   margin-bottom: 8px;
 }
+
 .portfolio-item-text {
   font-size: 16px;
   line-height: 1.5;
@@ -397,6 +395,7 @@ body {
 .logo-studio-f {
   color: #f4f4fd;
 }
+
 .footer-text {
   font-weight: 400;
   font-size: 16px;
@@ -407,15 +406,6 @@ body {
 
 .footer-wrap .container {
   display: flex;
-  /* my border */
-  /* border: 2px dashed #ffffff; */
-  /* my border */
-}
-
-.footer-socials {
-  /* my border */
-  /* border: 2px dashed #ffffff; */
-  /* my border */
 }
 
 .footer-socials-text {
@@ -426,3 +416,11 @@ body {
   color: #fff;
   margin-bottom: 16px;
 }
+
+.footer-socials .socials-list {
+  gap: 16px;
+}
+
+/* my border */
+/* border: 2px dashed #ffffff; */
+/* my border */
