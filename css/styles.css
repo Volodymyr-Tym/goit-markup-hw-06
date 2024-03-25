@@ -223,8 +223,6 @@ body {
 }
 
 .features-icon {
-  width: 64px;
-  height: 64px;
   margin: 24px auto;
 }
 
@@ -292,8 +290,6 @@ body {
 }
 
 .socials-icon {
-  width: 40px;
-  height: 40px;
   fill: #4d5ae5;
 }
 
@@ -422,5 +418,5 @@ body {
 }
 
 /* my border */
-/* border: 2px dashed #ffffff; */
+/* border: 2px dashed #fb0000; */
 /* my border */
