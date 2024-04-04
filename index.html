@@ -537,34 +537,31 @@
         <form class="feedback-form">
           <label class="feedback-label">
             Name
-
-            <svg class="input-icon" width="12" height="12">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
             <input
               class="feedback-input fis"
               type="text"
               name="username"
               autofocus
             />
+            <svg class="input-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
           </label>
 
           <label class="feedback-label">
             Phone
-
+            <input class="feedback-input fis" type="tel" name="userphone" />
             <svg class="input-icon" width="12" height="12">
               <use href="./images/icons.svg#icon-tel"></use>
             </svg>
-            <input class="feedback-input fis" type="tel" name="userphone" />
           </label>
 
           <label class="feedback-label">
             Email
-
+            <input class="feedback-input fis" type="email" name="useremail" />
             <svg class="input-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-            <input class="feedback-input fis" type="email" name="useremail" />
           </label>
 
           <label class="feedback-label">
@@ -576,13 +573,17 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <label class="feedback-label">
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
-            <input type="checkbox" name="policy-check" id="policy-check" />
-          </label>
-          <button class="send-modal-btn" type="submit">Send</button>
         </form>
+
+          <div class="pr-pol-check">
+            <input class="pr-pol-checkbox" type="checkbox" name="policy-check" id="policy-check" required/>
+            <label for="policy-check" class="feedback-label">
+              I accept the terms and conditions of the <a href="">Privacy Policy</a>
+            </label>
+          </div>
+            
+          <button class="send-modal-btn" type="submit">Send</button>
+        
       </div>
     </div>
   </body>
