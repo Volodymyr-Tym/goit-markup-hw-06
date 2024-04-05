@@ -505,11 +505,20 @@
             </li>
           </ul>
         </div>
+
         <div class="f-subscribe-field">
           <p class="footer-header-text">Subscribe</p>
           <form class="f-form" name="f-subs-form">
-            <input type="email" name="subs-email" placeholder="E-mail" />
-            <button class="subs-button" type="submit">
+            <label class="f-subs-label">
+              <input
+                class="f-subs-input"
+                type="email"
+                name="subs-email"
+                placeholder="E-mail"
+              />
+            </label>
+
+            <button class="f-subs-button" type="submit">
               Subscribe
               <svg class="send-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -524,7 +533,7 @@
     <!--  -->
     <div class="modal-overlay">
       <div class="modal">
-        <button class="close-modal-btn">
+        <button class="close-modal-btn" type="button">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -575,15 +584,21 @@
           </label>
         </form>
 
-          <div class="pr-pol-check">
-            <input class="pr-pol-checkbox" type="checkbox" name="policy-check" id="policy-check" required/>
-            <label for="policy-check" class="feedback-label">
-              I accept the terms and conditions of the <a href="">Privacy Policy</a>
-            </label>
-          </div>
-            
-          <button class="send-modal-btn" type="submit">Send</button>
-        
+        <div class="pr-pol-check">
+          <input
+            class="pr-pol-checkbox"
+            type="checkbox"
+            name="policy-check"
+            id="policy-check"
+          />
+          <div class="checkbox-rect" width="16" height="16"></div>
+          <label for="policy-check" class="feedback-label">
+            I accept the terms and conditions of the
+            <a href="">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="send-modal-btn" type="submit">Send</button>
       </div>
     </div>
   </body>
