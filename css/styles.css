@@ -1,3 +1,4 @@
+/* ____________ Common styles ____________ */
 h1,
 h2,
 h3,
@@ -35,7 +36,7 @@ body {
   background-color: #ffffff;
 }
 
-/* Header line */
+/* ____________ Header line ____________ */
 .header-line {
   border-bottom: 1px solid #e7e9fc;
   top: 0;
@@ -53,7 +54,6 @@ body {
   align-items: center;
 }
 
-/* General field */
 .container {
   max-width: 1158px;
   margin: 0 auto;
@@ -140,8 +140,9 @@ body {
   color: #404bbf;
 }
 
-/* Main content */
-/* Main section */
+/* ____________ Main content ____________ */
+
+/* ____________ Hero ____________ */
 .hero-wrap {
   background-color: #2e2f42;
   height: 600px;
@@ -199,12 +200,11 @@ body {
   background-color: #404bbf;
 }
 
-/* Section 1 (Features) */
+/* ____________ Features ____________ */
 .features {
   padding: 120px 0;
 }
 
-/* General section titles */
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -216,7 +216,7 @@ body {
   margin-bottom: 72px;
 }
 
-/* Hidden (Features section) title */
+/* Hidden title (Features) */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -267,7 +267,7 @@ body {
   color: #434455;
 }
 
-/* Section 2 (Our Team) */
+/* ____________ Our Team ____________ */
 .our-team-wrap {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -338,7 +338,7 @@ body {
   fill: #f4f4fd;
 }
 
-/* Section 3 (Our Portfolio ) */
+/* ____________ Our Portfolio ____________ */
 .our-portfolio-wrap {
   padding: 120px 0;
 }
@@ -410,7 +410,7 @@ body {
   color: #434455;
 }
 
-/* Footer */
+/* ____________ Footer ____________ */
 .footer-wrap {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -548,8 +548,7 @@ body {
   margin-left: 16px;
 }
 
-/* =========Overlay window=========*/
-/*  */
+/* ____________ Overlay ____________ */
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
@@ -572,7 +571,7 @@ body {
 
 .modal {
   position: absolute;
-  /* Justify center and move center */
+  /* Justify and move center */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -619,8 +618,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* =========Form========= */
-/* ====================== */
+/* ____________ Form ____________ */
 .feedback-form {
   width: 100%;
   display: flex;
@@ -740,13 +738,11 @@ body {
   margin-right: 8px;
 }
 
-/* ======================== */
 .ch-box:checked + .user-privacy-label .privacy-cheacker {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
-/* ======================== */
 
 .privacy-link {
   color: #4d5ae5;
@@ -778,7 +774,7 @@ body {
   background-color: #404bbf;
 }
 
-/* -------------MEDIA------------- */
+/* ============ MEDIA ============ */
 @media screen and (min-width: 320px) and (max-width: 768px) {
   body {
     margin: 0;
@@ -789,7 +785,7 @@ body {
     padding: 0;
   }
 
-  /* -------------HEADER LINE------------- */
+  /* ____________ HEADER LINE ____________ */
   .header-line-items {
     padding: 16px 0;
   }
@@ -807,7 +803,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-  /* -------------HERO------------- */
+
+  /* ____________ HERO ____________ */
   .hero-wrap {
     height: 432px;
     padding: 72px;
@@ -827,7 +824,7 @@ body {
     word-wrap: none;
   }
 
-  /* -------------FEATURES------------- */
+  /* ____________ FEATURES ____________ */
   .features {
     padding: 96px 0;
   }
@@ -856,7 +853,7 @@ body {
     font-weight: 500;
   }
 
-  /* -------------OUR TEAM------------- */
+  /* ____________ OUR TEAM ____________ */
   .our-team-wrap {
     padding: 96px 0;
   }
@@ -871,7 +868,7 @@ body {
     width: 264px;
   }
 
-  /* -------------OUR PORTFOLIO------------- */
+  /* ____________ OUR PORTFOLIO ____________ */
   .our-portfolio-wrap {
     padding: 96px 0;
   }
@@ -890,7 +887,7 @@ body {
     height: 280px;
   }
 
-  /* -------------FOOTER------------- */
+  /* ____________ FOOTER ____________ */
   .footer-wrap {
     padding: 96px 0;
     height: 664px;
