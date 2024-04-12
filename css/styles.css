@@ -41,7 +41,7 @@ body {
   top: 0;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   /* position: sticky; */
   /* z-index: 998; */
@@ -172,7 +172,7 @@ body {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   max-width: 496px;
   margin-bottom: 48px;
 }
@@ -182,7 +182,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
   background-color: #4d5ae5;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -278,7 +278,7 @@ body {
   gap: 24px;
 }
 .our-team-card {
-  background-color: #fff;
+  background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -351,7 +351,7 @@ body {
 }
 
 .portfolio-item {
-  background: #fff;
+  background: #ffffff;
   width: calc((100% - 48px) / 3);
   border-bottom: 1px solid #e7e9fc;
   cursor: pointer;
@@ -497,7 +497,7 @@ body {
 
 .f-subs-input {
   padding-left: 16px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
@@ -506,10 +506,10 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: #ffffff;
 }
 .f-subs-input::placeholder {
-  color: #fff;
+  color: #ffffff;
 }
 
 .f-form {
@@ -533,7 +533,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   box-shadow: inset 0 0 12px 0 rgba(0, 0, 0, 0.05);
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -544,7 +544,7 @@ body {
 }
 
 .send-icon {
-  fill: #fff;
+  fill: #ffffff;
   margin-left: 16px;
 }
 
@@ -763,7 +763,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
