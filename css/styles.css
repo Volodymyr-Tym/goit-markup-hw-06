@@ -156,9 +156,9 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/wpbg.jpg);
+    url(../images/hero-img.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
   max-width: 1440px;
   display: block;
@@ -347,11 +347,15 @@ body {
   padding: 120px 0;
 }
 
-.our-portfolio {
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+
+.portfolio-list img {
+  background-color: #c8c8c8;
 }
 
 .portfolio-item {
@@ -756,7 +760,7 @@ body {
   background-color: #404bbf;
 }
 
-/* ____________ MOBILE MENU ____________ */
+/* ____________ Mobile menu ____________ */
 .mobile-menu-overlay {
   background-color: #ffffff;
   position: fixed;
@@ -798,7 +802,7 @@ body {
   display: none;
 }
 
-/* ============ MEDIA ============ */
+/* ============ MEDIA (MOBILE) ============ */
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 100%;
@@ -897,7 +901,7 @@ body {
     padding: 96px 0;
   }
 
-  .our-portfolio {
+  .portfolio-list {
     flex-direction: column;
     align-items: center;
   }
@@ -1015,6 +1019,7 @@ body {
   }
 }
 
+/* ============ MEDIA (TABLET) ============ */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     padding: 0 16px;
@@ -1099,7 +1104,7 @@ body {
     padding: 96px 0;
   }
 
-  .our-portfolio {
+  .portfolio-list {
     align-items: center;
     justify-content: center;
     row-gap: 72px;
@@ -1139,5 +1144,16 @@ body {
   .modal {
     top: 0;
     transform: translate(-50%, 96px);
+  }
+}
+
+/* ============ MEDIA RETINA============ */
+@media (min-resolution: 192dpi) {
+  .hero-wrap {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-img@2x.jpg");
   }
 }
