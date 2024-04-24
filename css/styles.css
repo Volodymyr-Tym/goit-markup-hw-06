@@ -70,11 +70,6 @@ body {
   padding-bottom: 16px;
 }
 
-/* ____________ Expended menu ____________ */
-.expended-menu {
-  display: none;
-}
-
 .nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -83,6 +78,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: auto;
 }
 .logo-studio-h {
   color: #2e2f42;
@@ -109,6 +105,7 @@ body {
   margin-right: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   opacity: 0;
   pointer-events: none;
@@ -147,7 +144,9 @@ body {
 }
 
 .header-nav {
+  display: flex;
   margin-bottom: auto;
+  width: 100%;
 }
 
 .nav-menu {
@@ -203,6 +202,11 @@ body {
 
 .mobile-menu-overlay .socials-list {
   gap: 40px;
+}
+
+/* ____________ Expended menu ____________ */
+.expended-menu {
+  display: none;
 }
 
 /* ____________ Main content ____________ */
@@ -832,12 +836,13 @@ body {
     padding-bottom: 0;
   }
 
-  .nav-logo {
-    margin-right: 120px;
-  }
-
   .header-nav {
     margin-bottom: 0;
+    align-items: center;
+  }
+
+  .nav-logo {
+    margin-right: 120px;
   }
 
   .nav-menu {
@@ -869,6 +874,7 @@ body {
     gap: 12px;
     margin-bottom: 16px;
     margin-top: 16px;
+    margin-left: auto;
   }
 
   .contacts-list-item {
