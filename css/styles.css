@@ -63,11 +63,16 @@ body {
 }
 
 .header-line-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.mobile-header-menu {
+  display: flex;
+}
+
+.mobile-header-nav {
+  margin-right: auto;
 }
 
 .nav-logo {
@@ -85,12 +90,15 @@ body {
 }
 
 /* ____________ Mobile menu ____________ */
-.mobile-menu {
+.mobile-menu-btn {
   width: 24px;
   height: 24px;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  background-color: transparent;
 }
 
 .mobile-menu-overlay {
@@ -128,25 +136,23 @@ body {
 }
 
 .close-menu-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-bottom: 24px;
   background-color: rgba(239, 239, 240, 0.1);
   border: 1px solid rgba(46, 47, 66, 0.1);
   padding: 0;
-  cursor: pointer;
-  flex-shrink: 0;
 }
 
 .header-nav {
-  display: flex;
+  margin-top: 72px;
   margin-bottom: auto;
-  width: 100%;
 }
 
 .nav-menu {
@@ -155,7 +161,7 @@ body {
   gap: 40px;
 }
 
-.nav-menu-item-text {
+.menu-item-link {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -164,10 +170,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu-item-text:hover,
-.nav-menu-item-text:focus {
+.menu-item-link:hover,
+.menu-item-link:focus {
   color: #404bbf;
 }
+
 .current {
   color: #404bbf;
 }
@@ -204,8 +211,7 @@ body {
   gap: 40px;
 }
 
-/* ____________ Expended menu ____________ */
-.expended-menu {
+.expended-header-menu {
   display: none;
 }
 
@@ -223,7 +229,10 @@ body {
     url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  padding: 72px 52px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background-size: cover;
+  max-width: 320px;
 }
 
 .hero-wrap .container {
@@ -409,12 +418,6 @@ body {
   max-width: 288px;
   border-bottom: 1px solid #e7e9fc;
   cursor: pointer;
-  box-shadow: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -758,6 +761,7 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
+  align-items: center;
 }
 
 .privacy-cheacker {
@@ -773,6 +777,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   margin-right: 8px;
 }
 
@@ -818,16 +823,11 @@ body {
     max-width: 768px;
   }
 
-  .mobile-menu {
+  .mobile-header-menu {
     display: none;
   }
-
-  /* ____________ EXPENDED MENU ____________ */
-  .expended-menu {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  .mobile-menu-overlay {
+    display: none;
   }
 
   /* ____________ HEADER LINE ____________ */
@@ -836,27 +836,43 @@ body {
     padding-bottom: 0;
   }
 
-  .header-nav {
-    margin-bottom: 0;
+  .expended-header-menu {
+    display: flex;
     align-items: center;
   }
 
-  .nav-logo {
-    margin-right: 120px;
+  .exp-header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 120px;
   }
 
-  .nav-menu {
-    flex-direction: row;
+  .exp-nav-menu {
+    display: flex;
+    gap: 40px;
   }
 
-  .nav-menu-item-text {
+  .exp-menu-item-link {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: block;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     padding-top: 24px;
     padding-bottom: 24px;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .exp-menu-item-link:hover,
+  .exp-menu-item-link:focus {
+    color: #404bbf;
+  }
+
+  .current {
+    color: #404bbf;
   }
 
   .current::after {
@@ -870,21 +886,20 @@ body {
     background-color: #404bbf;
   }
 
-  .contacts-list {
-    gap: 12px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    margin-left: auto;
+  .exp-menu-contacts {
+    font-style: normal;
   }
 
-  .contacts-list-item {
-    line-height: 14px;
-  }
-
-  .contact-link {
+  .exp-menu-contact-link {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .exp-menu-contact-link:focus,
+  .exp-menu-contact-link:hover {
+    color: #404bbf;
   }
 
   /* ____________ HERO ____________ */
@@ -896,6 +911,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-img768px.jpg);
+    max-width: 768px;
   }
   .hero-title {
     font-size: 56px;
@@ -915,12 +931,11 @@ body {
     max-width: calc((100% - 24px) / 2);
   }
 
-  /* ____________ OUR TEAM ____________ */
-  .our-team-wrap .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .features-title {
+    text-align: start;
   }
+
+  /* ____________ OUR TEAM ____________ */
 
   .our-team {
     flex-direction: row;
@@ -939,6 +954,7 @@ body {
 
   .portfolio-item {
     max-width: calc((100% - 24px) / 2);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
   /* ____________ FOOTER ____________ */
@@ -999,16 +1015,16 @@ body {
   }
 
   /* ____________ HEADER LINE ____________ */
-  .nav-logo {
-    margin-right: 76px;
+  .exp-header-nav {
+    gap: 76px;
   }
 
-  .contacts-list {
-    flex-direction: row;
+  .exp-menu-contacts-list {
+    display: flex;
     gap: 40px;
   }
 
-  .contact-link {
+  .exp-menu-contact-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -1024,6 +1040,7 @@ body {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-img1440px.jpg);
+    max-width: 1440px;
   }
   .hero-title {
     margin-bottom: 48px;
@@ -1054,7 +1071,6 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: start;
   }
 
   .features-text {
@@ -1064,6 +1080,16 @@ body {
   /* ____________ OUR PORTFOLIO ____________ */
   .portfolio-list {
     row-gap: 48px;
+  }
+
+  .portfolio-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .portfolio-item:hover,
+  .portfolio-item:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
   /* ____________ FOOTER ____________ */
